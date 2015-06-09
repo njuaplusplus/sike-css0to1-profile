@@ -1,8 +1,16 @@
 body {
+	font-family: 'Open Sans','helvetica',arial,sans-serif;
+    font-weight: 300;
+    color: #62686f;
     background-image: url(http://uploads.striking.ly/page/images/backgrounds/bg5.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  color: #333;
 }
 
 .container {
@@ -36,4 +44,95 @@ body {
     font-family: 'Open Sans','helvetica',arial,sans-serif;
     color: white;
     text-shadow: 0 1px rgba(0,0,0,0.3);   
+}
+
+.main-nav {
+    background-color: #333;
+}
+
+.main-nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.main-nav ul li {
+	display: inline-block;
+	margin: 15px 10px;
+}
+
+.main-nav ul li a {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.info-section {
+    padding: 30px 60px;
+  	background-color: #fff;
+}
+
+.info-section header {
+	margin-bottom: 60px;
+}
+
+.info-section header h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.whatido header h2:after {
+	content: "";
+	width:80px;
+	display: block;
+	margin:10px auto;
+	border-bottom: 3px solid black;
+}
+
+.info-section__description {
+    font-style: italic;
+}
+
+.info-section.whatido {
+	text-align: center;
+}
+
+.whatido__skill-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.whatido__skill--code {
+    background-image: url(../img/skill-code.png);
+}
+
+.whatido__skill--design {
+    background-image: url(../img/skill-design.png);
+}
+
+.whatido__skill--product {
+    background-image: url(../img/skill-product.png);
+}
+
+.whatido__skill {
+	float: left;
+	width: 33.3%;
+	padding-top: 100px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.clearfix:after {
+  content:"";
+  display:table;
+  clear:both;
 }
